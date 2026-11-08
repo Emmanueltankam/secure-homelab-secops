@@ -36,10 +36,11 @@ flowchart LR
 
 | Layer | Implementation | Security purpose |
 |---|---|---|
-| **Virtualization** | Proxmox VE + Docker | Isolate services from each other and from the host |
+| **Virtualization** | Proxmox VE + Docker containers (PostgreSQL, Portainer, FileBrowser) | Isolate services from each other and from the host |
 | **Remote access** | Tailscale | Reach the lab through an authenticated, encrypted VPN |
 | **Filtering** | UFW | Restrict which traffic the host accepts |
-| **Automation** | n8n + AI agents | Automate operational and security tasks |
+| **Automation** | n8n workflows + AI agents | Automate task management and API-driven publishing |
+| **Monitoring** | Real-time metrics dashboard | Track system load, network bandwidth and the health of containers and services |
 
 ## Why it matters
 
